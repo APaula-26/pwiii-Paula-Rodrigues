@@ -125,16 +125,20 @@ O comando ***composer install*** faz a instalação do ***php*** e gera a pasta 
 
 3º Ainda no PowerShell rodar o comando ***npm install*** que irá instalar os pacotes para utilização do ***node***
 
-4º Rodar o comando ***npm run*** build pois ele vai transformar os arquivos de uma forma que a máquina vai entender
+4º Rodar o comando ***npm run build*** pois ele vai transformar os arquivos de uma forma que a máquina vai entender
 
-observação: php artesian apresenta os comandos disponíveis 
+observação: php artisan apresenta os comandos disponíveis 
 
-5º Executar o comando ***php artesian key:generate,*** este comando irá criar uma chave criptografada com uma senha para o banco. 
+5º Executar o comando ***php artisan key:generate,*** este comando irá criar uma chave criptografada com uma senha para o banco. 
 
 observações: ***migrations*** arquivos gerados pelo ***orm***  que é o gerenciamento de objeto relacional que permite que trabalhemos com banco de dados usando linguagem alternativa.  
 
-observação: é necessário rodar as migrations para criar o banco de dados. 
+observação: é necessário rodar as migrates para criar o banco de dados. 
 
-6º Executar o comando ***php artesian migrations*** para poder criar o banco de dados
+6º Executar o comando ***php artisan migrate*** para poder criar o banco de dados
 
-7º Executar o comando composer run dev 
+7º Executar o comando **composer run dev**
+
+8º Segurar o Ctrl + clicar sobre o endereço no Power Shell identificado na categoria Server da seguinte forma:
+
+[server]    INFO  Server running on [http://127.0.0.1:8000].

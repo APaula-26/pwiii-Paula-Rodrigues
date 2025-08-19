@@ -1,0 +1,35 @@
+Blade Templates:
+
+
+Bootstrap
+
+ @vite('resources/css/app.css') -  Sempre previsa ter para ficar o estilo 
+
+
+Criar nova tela:
+
+Abre o terminal no vs code, quando estiver no projeto, no caso aqui Aula02. 
+Digitar php artisan - para ter acesso a ajuda, onde tem todos os comandos. 
+Digitar o comando php artisan make:view após o view colocar o nome da nova página, no nosso
+caso foi teste, nossa página teste. 
+Após isso devemos ir na pasta routes;
+Web.php 
+E inserir o endereço para retornar a tela que criamos, segue abaixo:
+
+Route::get('/paginateste', function () {
+    return view('teste');
+}); 
+
+Route : : get ( --> define que é uma rota
+
+'/' -> aqui definimos um apelido para se referir a página criada, pode ser qualquer nome
+mas por segurança podemos nomear de uma forma que identificamos, mas hackers terão
+dificuldades de saber o esquema de pastas. E pode ter muitos sub caminhos;
+
+Function -> onde iremos definir a função de retornar a página que criamos 
+
+return view('teste') -> retorna resultado da nossa tela, que acabamos de criar.  
+ 
+
+Para estudo de routes podemos acessar o canal laravel rotas 
+link -> https://www.youtube.com/watch?v=BgljE23RvDE&list=PLyugqHiq-SKfJcQFnTxxzO7VGX-Fq2HnT
