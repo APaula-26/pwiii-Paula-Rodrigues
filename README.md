@@ -142,3 +142,32 @@ observação: é necessário rodar as migrates para criar o banco de dados.
 8º Segurar o Ctrl + clicar sobre o endereço no Power Shell identificado na categoria Server da seguinte forma:
 
 [server]    INFO  Server running on [http://127.0.0.1:8000].
+
+
+## Inserir dados no Banco de Dados:
+
+** Sqlite é um dos vários motores do sql 
+
+1. Vai nas extensões do vscode e instala a extensão do SQLite (com o ícone de pena do alexczz);
+
+2. Apertar ctrl + p para pesquisar o sqlite na barra de pesquisa onde apresenta os comandos; 
+
+3. colocar '>sql' e cliCar sobre a opção de abrir o database;
+
+4. Na parte inferior do explorer irá ter o menu SQLITE EXPLORER, ali no final da tela, clicar para expandir;
+
+5. Clicar sobre o ícone de seta para roda o banco de usuários; 
+
+6. Seeders -> Dentro da pasta database, na pasta seeders clicar sobre o arquivo databaseseeder;
+
+7. Para criar diversos registros no banco deixar a linha com o comando "  User::factory(10)->create();" habilitada;
+
+8. No terminal rodar o comando php artisan para consultar os comandos e buscar o do banco de dados, do seed; 
+
+9. Para criar os dados vamos rodar no terminal o comando php artisan db:seed;
+
+10.Atualizar no canto inferior esquerdo o menu do sqlite explorer e depois rodar a tabela de users no nosso banco de dados; 
+
+11.As ações anteriores no terminal de comando faz com que crie dados para 10 usuários diferentes (O número de informações é por conta da declaração no passo 
+7, lá no arquivo de DataBaseSeeder.php.
+
